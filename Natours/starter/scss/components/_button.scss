@@ -5,8 +5,9 @@
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all 0.2s;
+    will-change: transform;
     position: relative;
     font-size: $default-font-size;
   }
@@ -27,7 +28,7 @@
 
   &--white {
     background-color: $color-white;
-    color: $color-grey-dark;
+    color: $color-grey-dark-1;
 
     &::after {
       background-color: $color-white;
