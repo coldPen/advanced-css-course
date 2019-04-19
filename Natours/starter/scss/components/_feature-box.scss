@@ -6,7 +6,7 @@
   border-radius: $rounded-corner;
   box-shadow: 0 1.5rem 4rem $shadow-15;
   transition: transform 0.3s;
-  will-change: transform;
+  //will-change: transform;
 
   &__icon {
     font-size: 6rem;
