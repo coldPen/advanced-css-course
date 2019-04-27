@@ -27,28 +27,30 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
-1em = 16px
+Order: Base + Typography > General layout > Grid > Page layout > Components
+
+Screen widths are mesured in em (don't ask why) : 1em = 16px
 */
 @mixin respond($breakpoint) {
-  // 600px
+  // 600px / 16px = 37.5em
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       @content;
     }
   }
-  // 900px
+  // 900px / 16px = 56.25em
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       @content;
     }
   }
-  // 1200px
+  // 1200px / 16px = 75em
   @if $breakpoint == tab-land {
     @media (max-width: 75em) {
       @content;
     }
   }
-  // 1800px
+  // 1800px / 16px = 112.5em
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       @content;
